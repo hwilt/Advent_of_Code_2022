@@ -37,7 +37,7 @@ def read_input():
 
 
 
-def day1():
+def part1():
     # read input and find the elf with the most calories
     elves = read_input()
     max_calories = 0
@@ -49,7 +49,7 @@ def day1():
     print(f"Day 1< Part 1 >: {max_calories} ")
 
 
-def day2():
+def part2():
     elves = read_input()
     # get the top 3 elves with the most calories
     elves.sort(key=lambda x: x.get_calories(), reverse=True)
@@ -59,6 +59,6 @@ def day2():
     print(f"Day 1< Part 2 >: {sum_calories} ")
 
 if __name__ == "__main__":
-    day1()
-    day2()
+    part1()
+    part2()
 
